@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd Grade Learning Adventure</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Learning Adventure</h1>
+        <div id="score">Score: <span id="scoreValue">0</span> ⭐</div>
+      </header>
+      
+      <nav id="gameMenu">
+        <button data-game="math" class="game-btn">
+          <span>🔢 Math Games</span>
+        </button>
+        <button data-game="money" class="game-btn">
+          <span>💰 Money Counting</span>
+        </button>
+        <button data-game="clock" class="game-btn">
+          <span>⏰ Tell the Time</span>
+        </button>
+      </nav>
+
+      <main id="gameArea"></main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
